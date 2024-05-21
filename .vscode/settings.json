@@ -4,5 +4,14 @@
     "gitdoc.autoCommitDelay": 60000,
     "gitdoc.autoPushDelay": 0,
     "gitdoc.commitMessageFormat": "ccc, LLL d, y, h:mm a '+00:00'",
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+    "flake8.args": [
+        "--ignore=E402,E501,F811,F841"
+    ],
+    "mypy-type-checker.args": [
+        "import-untyped"
+    ],
+    "pylint.args": [
+        "C0116"
+    ]
 }

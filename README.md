@@ -1,5 +1,9 @@
 # Developing AI Systems with the OpenAI API
 
+[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/datttrian/developing-ai-systems-with-the-openai-api/blob/main/src/notebook.ipynb)
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/datttrian/developing-ai-systems-with-the-openai-api)
+
 This is the repository for the DataCamp course Developing AI Systems with the OpenAI API. The
 full course is available from [DataCamp](https://www.datacamp.com/courses/developing-ai-systems-with-the-openai-api).
 
