@@ -25,7 +25,7 @@ already been loaded.
 
 ```{python}
 # Set up your OpenAI API key
-client = OpenAI(api_key="<OPENAI_API_TOKEN>")
+client = OpenAI()
 
 # Create the request
 response = client.chat.completions.create(
@@ -67,7 +67,7 @@ The `message` variable has already been imported.
 
 ```{python}
 # Set up your OpenAI API key
-client = OpenAI(api_key="<OPENAI_API_TOKEN>")
+client = OpenAI()
 
 # Use the try statement
 try: 
@@ -105,7 +105,7 @@ when possible.
 from tenacity import (retry, stop_after_attempt, wait_random_exponential)
 
 # Set up your OpenAI API key
-client = OpenAI(api_key="<OPENAI_API_TOKEN>")
+client = OpenAI()
 
 # Add the appropriate parameters to the decorator
 @retry(wait=wait_random_exponential(min=5, max=40), stop=stop_after_attempt(4))
@@ -147,7 +147,7 @@ The `measurements` list (containing a list of floats) and the
 
 ```{python}
 # Set up your OpenAI API key
-client = OpenAI(api_key="<OPENAI_API_TOKEN>")
+client = OpenAI()
 
 messages = []
 # Provide a system message and user messages to send the batch
@@ -184,7 +184,7 @@ The `tiktoken` library has been preloaded.
 
 ```{python}
 # Set up your OpenAI API key
-client = OpenAI(api_key="<OPENAI_API_TOKEN>")
+client = OpenAI()
 input_message = {"role": "user", "content": "I'd like to buy a shirt and a jacket. Can you suggest two color pairings for these items?"}
 
 # Use tiktoken to create the encoding for your model
@@ -224,7 +224,7 @@ to be passed to the model, have been preloaded.
 
 ```{python}
 # Set up your OpenAI API key
-client = OpenAI(api_key="<OPENAI_API_TOKEN>")
+client = OpenAI()
 
 response= client.chat.completions.create(
     model="gpt-3.5-turbo",
@@ -262,7 +262,7 @@ has also partially been filled already.
 
 ```{python}
 # Set up your OpenAI API key
-client = OpenAI(api_key="<OPENAI_API_TOKEN>")
+client = OpenAI()
 
 # Define the function parameter type
 function_definition[0]['function']['parameters']['type'] = 'object'
@@ -305,7 +305,7 @@ chat completions endpoint.
 
 ```{python}
 # Set up your OpenAI API key
-client = OpenAI(api_key="<OPENAI_API_TOKEN>")
+client = OpenAI()
 
 response = get_response(messages, function_definition)
 
@@ -349,7 +349,7 @@ the function asking to extract structured data.
 
 ```{python}
 # Set up your OpenAI API key
-client = OpenAI(api_key="<OPENAI_API_TOKEN>")
+client = OpenAI()
 
 # Append the second function
 function_definition.append({'type': 'function', 'function':{'name': 'reply_to_review', 'description': 'Reply politely to the customer who wrote the review', 'parameters': {'type': 'object', 'properties': {'reply': {'type': 'string','description': 'Reply to post in response to the review'}}}}})
@@ -383,7 +383,7 @@ preloaded.
 
 ```{python}
 # Set up your OpenAI API key
-client = OpenAI(api_key="<OPENAI_API_TOKEN>")
+client = OpenAI()
 
 response= client.chat.completions.create(
     model=model,
@@ -424,7 +424,7 @@ to generate a reply.
 
 ```{python}
 # Set up your OpenAI API key
-client = OpenAI(api_key="<OPENAI_API_TOKEN>")
+client = OpenAI()
 
 # Modify the messages
 messages.append({"role": "system", "content": "Don't make assumptions about what values to plug into functions."})
@@ -462,7 +462,7 @@ response with the requested airport information.
 
 ```{python}
 # Set up your OpenAI API key
-client = OpenAI(api_key="<OPENAI_API_TOKEN>")
+client = OpenAI()
 
 # Define the function to pass to tools
 function_definition = [{"type": "function",
@@ -500,7 +500,7 @@ preloaded to print the output.
 
 ```{python}
 # Set up your OpenAI API key
-client = OpenAI(api_key="<OPENAI_API_TOKEN>")
+client = OpenAI()
 
 # Call the Chat Completions endpoint 
 response = client.chat.completions.create(
@@ -580,7 +580,7 @@ users' prompts before generating the response.
 
 ```{python}
 # Set up your OpenAI API key
-client = OpenAI(api_key="<OPENAI_API_TOKEN>")
+client = OpenAI()
 
 message = "Can you show some example sentences in the past tense in French?"
 
@@ -612,7 +612,7 @@ say 'Apologies, but I am not allowed to discuss this topic.'.
 
 ```{python}
 # Set up your OpenAI API key
-client = OpenAI(api_key="<OPENAI_API_TOKEN>")
+client = OpenAI()
 
 user_request = "Can you recommend a good restaurant in Berlin?"
 
@@ -653,7 +653,7 @@ it.
 
 ```{python}
 # Set up your OpenAI API key
-client = OpenAI(api_key="<OPENAI_API_TOKEN>")
+client = OpenAI()
 
 messages = [{'role': 'system', 'content': 'You are a personal finance assistant.'},
     {'role': 'user', 'content': 'How can I make a plan to save $800 for a trip?'},
@@ -690,7 +690,7 @@ preloaded containing text from a social media post.
 
 ```{python}
 # Set up your OpenAI API key
-client = OpenAI(api_key="<OPENAI_API_TOKEN>")
+client = OpenAI()
 
 # Generate a unique ID
 unique_id = str(uuid.uuid4())
