@@ -4,7 +4,7 @@
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/datttrian/developing-ai-systems-with-the-openai-api)
 
-This is the repository for the DataCamp course Developing AI Systems with the OpenAI API. The
+This is a repository for the DataCamp course Developing AI Systems with the OpenAI API. The
 full course is available from [DataCamp](https://www.datacamp.com/courses/developing-ai-systems-with-the-openai-api).
 
 ![Clear as Data](http://drive.google.com/uc?export=view&id=1PJVtMhPE_h3g2c9wXm9tf6_pIhvMyDRI)
